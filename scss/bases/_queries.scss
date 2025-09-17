@@ -1,0 +1,52 @@
+/*media-queries*/
+@media (max-width: 968px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        
+        padding: 1rem;
+    }
+    .hamburguesa {
+        display: block;
+        
+    }
+    
+    li {
+    display: none;
+    }
+
+
+    
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .hero {
+        height: 40vh;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .galeria {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .galeria img {
+        height: 180px;
+    }
+}
+

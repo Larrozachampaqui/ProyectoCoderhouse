@@ -1,0 +1,188 @@
+/*estilos-genereales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #bce4c0;
+  background-color: #558061;
+  padding-bottom: 2rem;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #9fecb4;
+}
+
+/*logo-mas-menu-hamburguesa*/
+.logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.hamburguesa {
+  display: none;
+  font-size: 30px;
+  color: #2c3e30;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c3e30;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #7a9f79;
+}
+
+/*retoques*/
+.contenido-principal {
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.titleone {
+  text-align: center;
+}
+
+.titletwo {
+  text-align: center;
+}
+
+/*retoques*/
+.contenido-principal {
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.titleone {
+  text-align: center;
+}
+
+.titletwo {
+  text-align: center;
+}
+
+/*footer-contactos*/
+footer {
+  background-color: #586f5d;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #c9dfc9;
+}
+
+/*hero-seccion*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sierrass.jpeg") center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+/*media-queries*/
+@media (max-width: 968px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  .hamburguesa {
+    display: block;
+  }
+  li {
+    display: none;
+  }
+  nav ul {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .hero {
+    height: 40vh;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .galeria img {
+    height: 180px;
+  }
+}/*# sourceMappingURL= style.css.map */
